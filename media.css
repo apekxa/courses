@@ -1,0 +1,293 @@
+/* General styles for responsiveness */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles for screens up to 1197px */
+@media (max-width: 1197px) {
+    .aboutimg img {
+        display: none;
+    }
+
+    .middle ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 130px;
+        background: #8ba4e8;
+        width: 300px;
+        padding: 20px 0;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .middle ul.active {
+        display: flex;
+    }
+
+    .middle ul li a {
+        color: rgb(0, 0, 0);
+        padding: 10px 30px;
+        width: 100%;
+        text-decoration: none;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+
+    .middle ul li a:hover {
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+    }
+    .menu-icon{
+        margin-left: 100%;
+    }
+
+    .bg1 {
+        background: url(./Assets/website.gif);
+        min-height: 70vh;
+        width: 100%;
+        position: relative;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .javaright{
+        display: none;
+    }
+
+    .leftjava h1{
+        text-align: center;
+    }
+
+    .about{
+        margin-top: -10%;
+        margin-left: -5%;
+    }
+    .about p{
+        font-size: 18px;
+        width: 112%;
+        margin: auto;
+    }
+    .about h2{
+        text-align: center;
+    }
+    .about h3{
+        text-align: center;
+        margin-top: -15%;
+    }
+
+    .leftabout{
+        font-size: 18px;
+        width: 100%;
+    }
+
+}
+
+/* Styles for screens up to 1024px */
+@media (max-width: 1024px) {
+    .card1 {
+        flex: 1 1 calc(50% - 40px);
+    }
+
+    .coursesbox1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu-icon{
+        margin-left: 100%;
+    }
+    
+}
+
+@media (max-width: 900px) {
+    .bg1 {
+        background: url(./Assets/website.gif);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .social button {
+        display: none;
+    }
+
+
+    .coursesbox1{
+        margin-bottom: 70px;
+    }
+    .bg10{
+        min-height: 140vh;
+    }
+
+    .coursesbox{
+        margin-bottom: 0px;
+    }
+
+    
+}
+
+@media(max-width:800px){
+    .courseslist{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .javacontainer {
+        padding: 15px;
+    }
+
+    .javabtnn,
+    .btnjava {
+        width: 100%;
+    }
+
+    .formjava {
+        width: 90%;
+    }
+    .main1{
+        width: 91%;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .courseslist{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card1 {
+        flex: 1 1 100%;
+    }
+
+    .middle ul {
+        width: 50%;
+        right: 20px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .quicklinks ul {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .social button {
+        display: none;
+    }
+    .coursesbox1{
+        margin-bottom: 0;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+    .middle ul {
+        width: 100%;
+    }
+
+    .middle ul li a {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    .menu-icon {
+        font-size: 25px;
+    }
+
+}
+
+
+@media (max-width: 390px) {
+    .sidel {
+        margin-left: -5%;
+    }
+
+    .social button {
+        display: none;
+    }
+
+    .middle ul {
+        left: -1%;
+    }
+
+    .menu-icon {
+        padding-left: 10px;
+        margin-left: -5%;
+    }
+
+    .quicklinks ul {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .banner {
+        height: 60vh;
+    }
+
+    .banner-text {
+        top: 50%;
+        width: 90%;
+        padding: 15px;
+    }
+
+    .banner-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .banner-text p {
+        font-size: 1rem;
+    }
+    .snowflake{
+        animation-duration: 10s, 10s; 
+    }
+}
+
+/* Responsive for mobile devices */
+@media (max-width: 480px) {
+    .banner {
+        height: 40vh;
+    }
+
+    .banner-text {
+        top: 50%;
+        width: 95%;
+        padding: 10px;
+    }
+
+    .banner-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .banner-text p {
+        font-size: 0.9rem;
+    }
+}
